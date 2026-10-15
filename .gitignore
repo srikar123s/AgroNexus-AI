@@ -1,0 +1,7 @@
+# Runtime database created from backend/database/schema.sql
+backend/database/*.db
+__pycache__/
+# Large datasets
+data/soil-nutrient-analysis.csv
+.venv
+.vscode

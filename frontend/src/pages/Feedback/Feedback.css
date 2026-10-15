@@ -1,0 +1,155 @@
+.feedback-page {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.feedback-header {
+  margin-bottom: 28px;
+}
+
+.feedback-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.feedback-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.feedback-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.previous-decision {
+  padding: 18px;
+  margin-bottom: 28px;
+  border-radius: 10px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.previous-decision-label {
+  margin: 0 0 6px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.previous-decision-action {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #166534;
+}
+
+.previous-decision-outcome {
+  margin: 6px 0 0;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.feedback-section {
+  margin-bottom: 26px;
+}
+
+.feedback-section > label,
+.feedback-section-title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.outcome-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.outcome-option {
+  position: relative;
+}
+
+.outcome-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.outcome-option label {
+  display: block;
+  padding: 14px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  cursor: pointer;
+  color: #4b5563;
+  transition: 0.2s ease;
+}
+
+.outcome-option label:hover {
+  border-color: #166534;
+}
+
+.outcome-option input:checked + label {
+  border-color: #166534;
+  background: #e8f5e9;
+  color: #166534;
+  font-weight: 600;
+}
+
+.effectiveness-value {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #166534;
+}
+
+.effectiveness-slider {
+  width: 100%;
+  accent-color: #166534;
+}
+
+.feedback-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  resize: vertical;
+  outline: none;
+}
+
+.feedback-textarea:focus {
+  border-color: #166534;
+}
+
+.feedback-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+
+.feedback-button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 20px;
+  background: #166534;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.feedback-button:hover {
+  background: #14532d;
+}
+
+@media (max-width: 650px) {
+  .outcome-options {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,165 @@
+.recommendation-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.recommendation-header {
+  margin-bottom: 28px;
+}
+
+.recommendation-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.recommendation-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.recommendation-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.recommendation-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.recommendation-label {
+  margin: 0 0 8px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.recommendation-action {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #166534;
+}
+
+.outcome-box {
+  min-width: 150px;
+  padding: 18px;
+  text-align: center;
+  border-radius: 12px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.outcome-value {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #166534;
+}
+
+.outcome-label {
+  margin: 4px 0 0;
+  color: #4b5563;
+  font-size: 12px;
+}
+
+.section {
+  padding-top: 28px;
+}
+
+.section h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reason {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.reason-icon {
+  font-size: 17px;
+}
+
+.reason p {
+  margin: 0;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.context-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.context-item {
+  padding: 16px;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.context-label {
+  margin: 0 0 5px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.context-value {
+  margin: 0;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.recommendation-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.recommendation-button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 20px;
+  background: #166534;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.recommendation-button:hover {
+  background: #14532d;
+}
+
+@media (max-width: 700px) {
+  .recommendation-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .outcome-box {
+    width: 100%;
+  }
+
+  .context-grid {
+    grid-template-columns: 1fr;
+  }
+}

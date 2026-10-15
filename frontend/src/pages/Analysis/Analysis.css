@@ -1,0 +1,91 @@
+.analysis-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.analysis-header {
+  margin-bottom: 28px;
+}
+
+.analysis-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.analysis-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.evidence-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.evidence-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.evidence-source {
+  margin: 0 0 6px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.evidence-value {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.evidence-detail {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.evidence-wide {
+  grid-column: 1 / -1;
+}
+
+.analysis-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+
+.analysis-button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 20px;
+  background: #166534;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.analysis-button:hover {
+  background: #14532d;
+}
+
+@media (max-width: 750px) {
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-wide {
+    grid-column: auto;
+  }
+}

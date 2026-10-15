@@ -1,0 +1,100 @@
+.crop-form-page {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.crop-form-header {
+  margin-bottom: 28px;
+}
+
+.crop-form-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.crop-form-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.crop-form-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.crop-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.crop-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.crop-form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.crop-form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.crop-form-group input,
+.crop-form-group select,
+.crop-form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.crop-form-group input:focus,
+.crop-form-group select:focus,
+.crop-form-group textarea:focus {
+  border-color: #166534;
+}
+
+.crop-form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.crop-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+
+.crop-primary-button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 20px;
+  background: #166534;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.crop-primary-button:hover {
+  background: #14532d;
+}
+
+@media (max-width: 700px) {
+  .crop-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .crop-form-group.full-width {
+    grid-column: auto;
+  }
+}
